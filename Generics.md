@@ -25,3 +25,4 @@ List<String> list = new ArrayList<String>();
 list.add(s);
 String ss = list.iterator().next(); //work just fine!
 ```
+## Generics in methods:
