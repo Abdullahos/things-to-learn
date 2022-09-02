@@ -31,3 +31,9 @@ Car car = objectMapper.readValue(json, Car.class);           //convert(deseriali
 System.out.println(car);
 
 ```
+## Creating a Java List From a JSON Array String(Using TypeReference)
+```
+String jsonCarArray = 
+  "[{ \"color\" : \"Black\", \"type\" : \"BMW\" }, { \"color\" : \"Red\", \"type\" : \"FIAT\" }]";
+List<Car> listCar = objectMapper.readValue(jsonCarArray, new TypeReference<List<Car>>(){});
+```
