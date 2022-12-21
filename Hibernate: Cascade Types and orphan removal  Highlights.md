@@ -20,6 +20,7 @@ CascadeType.REMOVE propagates the remove operation from parent to child entity.
 
 solutions:
 1- we can use orphanRemoval = true so when the post deleted its comments became with no parent(orphan), so we tell hibernate to delete them
+but we Need to parent to hold value -not null- to the child or it will throw exception, i assigned new ArrayList.
 2- we can use cascade.REMOVE to be able to do something like that:
   ```
   post.comments.remove(comment);
