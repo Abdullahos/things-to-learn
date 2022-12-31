@@ -55,3 +55,6 @@ Binding:[1, 3]
 INSERT INTO author_books (author_id, books_id)
   VALUES (?, ?)
   ```
+So, in order to insert a new book, the JPA persistence provider (Hibernate) deletes
+all associated books from the junction table. Next, it adds the new book in-memory
+and persists the result back again.
