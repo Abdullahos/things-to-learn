@@ -19,7 +19,8 @@ that leads to 2 problems:
   Persisting a New Book of an Existing Author
 Since Joana Nimar has just published a new book, we have to add it to the book table.
 This time, the service-method looks as follows:
-@Transactional
+```
+  @Transactional
 public void insertNewBook() {
     Author author = authorRepository.fetchByName("Joana Nimar");
     Book book = new Book();
@@ -28,8 +29,10 @@ public void insertNewBook() {
     author.addBook(book); // use addBook() helper
     authorRepository.save(author);
 }
+```
 Calling this method and focusing on SQL INSERT statements results in the following
 output:
+```  
 INSERT INTO book (isbn, title)
   VALUES (?, ?)
 Binding:[004-JN, History Details]
@@ -50,3 +53,4 @@ Associations
 Binding:[1, 3]
 INSERT INTO author_books (author_id, books_id)
   VALUES (?, ?)
+  ```
