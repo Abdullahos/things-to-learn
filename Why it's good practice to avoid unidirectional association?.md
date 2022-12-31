@@ -58,3 +58,12 @@ INSERT INTO author_books (author_id, books_id)
 So, in order to insert a new book, the JPA persistence provider (Hibernate) deletes
 all associated books from the junction table. Next, it adds the new book in-memory
 and persists the result back again.
+  
+## very important note:
+
+  ```
+  When the database deletes all the table rows associated with the
+parent entity from the junction table, it also deletes the corresponding index
+entries. When the database inserts back in the junction table, it inserts the
+index entries as well.
+```  
