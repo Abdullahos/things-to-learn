@@ -6,8 +6,10 @@ it's better to use Set over List for ManyToMany relationship because of the dele
 /**
 *A have 3 B
  we want to delete B1
- we use List
 */
+```
+## Using List
+```
 B b = getB(bId);
 /**
 * this will generate 
