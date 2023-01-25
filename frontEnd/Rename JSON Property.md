@@ -6,7 +6,7 @@ I had a JSON response that looks like this:
 }
 
 And I need to send it to another endpoint that takes almost the same JSON format except the address is called home_address.
-so i did that
+so i did the following
 
 ```
 to_replaced = 'address';
