@@ -1,11 +1,11 @@
-if had a json response that looks like this:
+I had a JSON response that looks like this:
 {
   name: 'sara',
   age: 23, 
   address: 'dfdfgsfgfdd'
 }
 
-and i need to send it to another endpoint that takes almost the same JSON format except the address is called home_address
+and i need to send it to another endpoint that takes almost the same JSON format except the address is called home_address.
 so i did that
 
 ```
