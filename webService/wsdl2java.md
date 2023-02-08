@@ -3,11 +3,10 @@ I needed to use 2 wsdls to generate java classes to use it
 the two wsdls 're ErpObjectDFFUpdateService & ErpObjectAttachmentService
 the problem is the ErpObjectAttachmentService classes override the ErpObjectDFFUpdateService classes includings the ObjectFactory Classes
 
-### My Gradle and java versions
+### My Gradle and java version
 ```
 gradle version : 7.6
 java version : 11
-
 ```
 ### Here's what my gradle was: 
 ```
@@ -31,8 +30,8 @@ wsdl2java {
 i just mentioned the related details
 
 ### How i solve it:
-by adding ** stabilizeAndMergeObjectFactory = true **
-as ** If multiple WSDLs target the same package, merge their ObjectFactory classes.** 
+by adding **stabilizeAndMergeObjectFactory = true**
+as **If multiple WSDLs target the same package, merge their ObjectFactory classes.** 
 
 ### How my gradle now looks like:
 ```
