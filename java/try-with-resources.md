@@ -25,4 +25,4 @@ catch(Exception e) {
 finally{
 }
 ```
-**In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed
+**In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed**
