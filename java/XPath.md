@@ -1,4 +1,4 @@
-## sometimes we need to perfrom some actions on xml file like search for tags, remove some, edit values of some, ...
+## sometimes we need to perfrom some actions on xml file like searching for tags, remove some, edit values of some, ...
 
 **XPath is a java library for that!**
 
@@ -25,7 +25,7 @@
         }
     }
 ```
-### AS shown, this code trying to match some experssions and remove the found nodes that matches, then save to a file
+### As shown, this code 's trying to match some experssions and remove the found nodes that matches, then save to a file
 
 ### Another example:
 ```
