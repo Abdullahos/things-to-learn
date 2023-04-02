@@ -1,4 +1,4 @@
-notice this code
+Notice this code:
 ```
 FileReader fr = new FileReader(path);
     BufferedReader br = new BufferedReader(fr);
@@ -16,6 +16,7 @@ if br.close() throws execption, the fr.close won't be executed and this will lea
 try-with-resources
 
 ### Syntax
+```
 try(potentiallyExceptionalStuff) {
 	
 }
@@ -23,4 +24,5 @@ catch(Exception e) {
 }
 finally{
 }
-In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed.
+```
+** In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed. **
