@@ -1,4 +1,4 @@
-# objectfactory classes being overriden by wsdl com.yupzipa.wsdl2java
+# objectfactory classes being overridden by wsdl com.yupzipa.wsdl2java
 I needed to use 2 wsdls to generate java classes to use it
 the two wsdls 're ErpObjectDFFUpdateService & ErpObjectAttachmentService
 the problem is the ErpObjectAttachmentService classes override the ErpObjectDFFUpdateService classes includings the ObjectFactory Classes
