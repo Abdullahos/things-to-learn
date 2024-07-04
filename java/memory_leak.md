@@ -15,6 +15,9 @@ The garbage collector removes unreferenced objects periodically, but it never co
 - Spontaneous and strange application crashes
 - The application is occasionally running out of connection objects.
 
+Resources:
+https://www.baeldung.com/java-memory-leaks
+
 
 ### Examples:
 
